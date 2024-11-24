@@ -1,10 +1,5 @@
 package app;
 
-/**
- * Class represeting a Country from the Studio Project database
- *
- * @author Halil Ali, 2024. email: halil.ali@rmit.edu.au
- */
 
 public class Country {
 

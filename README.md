@@ -1,18 +1,4 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/LrE_Ojxa)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15119226&assignment_repo_type=AssignmentRepo)
-# Studio Project Starter Code (Semester 1 - April 2024)
-Starter code for the Studio Project. This is a simple layout connected to a GitHub Classroom that serves as the basis for implementing the studio project. 
 
-This example program provides:
-
-* A Java class for the Index page (index.html).
-* 6x Java classes for 6 pages. Additional pages can be added by adding additional classes.
-* JDBCConnection Java class, that uses the Food Loss Database. This class contains one method to return all Countries contained in the Database.
-* Examples CSS (```common.css```) file in the resources directory.
-* Example image (```logo.png```) file in the resources directory with where to locate any images you want on your website
-* Starting database:
-    * ```foodloss.db``` - contains a starting database for you based on a subset of the foodloss ER Model.
-* Optional helper program (``FoodProcessCSV.java``) that shows an example of how to load the SQLite database by using Java to read the CSV files and JDBC insert statements to update the footloss SQLite database.
 
 
 Classes backing Web pages:
