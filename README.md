@@ -1,11 +1,11 @@
 
-
+# Code Structure
 
 Classes backing Web pages:
 ```bash
 ├── PageIndex.java                    - Homepage page for Level 1 Sub-task A
 ├── PageMission.java                  - Mission Statement page for Level 1 Sub-task B
-├── PageST2/3.java                - Sets of 4 Java files backing the 4 pages for 4 Level2/3 sub-tasks. Student in group of 3 will need to add additional Java files
+├── PageST2/3 A/B.java                - Sets of 4 Java files backing the 4 pages for 4 Level2/3 sub-tasks. Student in group of 3 will need to add additional Java files
 ```
 
 Other Classes:
@@ -50,36 +50,11 @@ There are two places code can be run from
 2. the **optional** helper program to use JDBC to load your SQLite database from the CSVs using Java
 
 ## Running the Main web server
-You can run the main webserver program similar to the project workshop activities
 1. Open this project within VSCode
 2. Allow VSCode to read the pom.xml file
  - Allow the popups to run and "say yes" to VSCode configuring the build
  - Allow VSCode to download the required Java libraries
 3. To Build & Run
  - Open the ``src/main/java/app/App.java`` source file, and select "Run" from the pop-up above the main function
-4. Go to: http://localhost:7000
-
-## Running the Helper Program
-The helper program in ``src/main/java/helper/FoodProcessCSV.java`` can be run separetly from the main webserver. This gives a demonstration of how you can use Java to read the provided CSV files and store the information in an SQLite database. This example loads a subset of the data in the ``database/FoodLoss.csv`` and ``database/CPC.csv`` files into a database. It also runs a series of queries to do lookups to check records match, but this can be modified to do lookups and insert other data into related tables if necessary.
-
-You can run the optional helper program by
-1. Open this ``src/main/java/helper/FoodProcessCSV.java`` source file
-2. Select "Run" from the pop-up above the main function (or "Run Java" from the top-right arrow button)
-3. Allow the program to run
-4. By default it will drop the existing tables and recreate them before populating each table
-5. If you do not want to drop existing tables, comment out line line 52: dropTablesAndRecreateTables();
-
-You can modify this file as you wish, for other tables and CSVs. When modifying you may need to pay attention to:
-* ``DATABASE`` field to change the database location
-* ``FOOD_CSV_FILE`` and ``CPC_CSV_FILE`` to change which CSV files are bring read in
-* ``INSERT`` statement construction to:
-    * Change the table being used
-    * Column data being stored
-
-# Authors
-* Dr. Halil Ali, School of Computing Technologies, STEM College, RMIT University.
-* Dr. Timothy Wiley, School of Computing Technologies, STEM College, RMIT University.
-* Prof. Santha Sumanasekara, School of Computing Technologies, STEM College, RMIT University.
-
-Copyright RMIT University (c) 2024
+4. Go to: http://localhost:7001
 
