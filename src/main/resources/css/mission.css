@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+}
+
+/* topnav */
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #38414b;
+  padding: 15px 20px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  overflow: auto;
+  text-wrap: nowrap;
+}
+
+.topnav .logo a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  padding: 0px;
+}
+
+/* topnav links */
+
+.topnav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.topnav ul li {
+  margin-left: 20px;
+}
+
+.topnav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  transition: color 0.3s ease;
+  padding: 10px;
+}
+
+.topnav ul li a:hover {
+  color: #b7bbc1;;
+}
+
+/* Header and mission statement */
+
+.header {
+  color: white;
+  text-align: center;
+  padding: 65px 60px 90px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #1e2530;
+}
+
+.header h1 {
+  font-size: 50px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.header p {
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* Body */
+
+body {
+  font-family: Arial;
+  padding: 0px;
+  margin: 0px;
+  background: #ddd;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+/* Content headings */
+
+.content-heading-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+
+.content-heading {
+  display: flex;
+  align-items: center;
+}
+
+.content-heading i {
+  font-size: 36px;
+  display: block;
+  color: #2d3436;
+  margin-left: 0;
+}
+
+.content-heading h3 {
+  font-size: 22px;
+  color: #2d3436;
+  margin-top: 20;
+  margin-bottom: 10;
+  padding-left: 20;
+}
+
+/* PERSONAS  */
+
+.p-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 5;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.p-placement {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.persona {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  align-self: top;
+  min-width: 350;
+}
+
+.persona summary {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.persona summary img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* Remove the default arrow from the summary element */
+.persona summary {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  list-style: none; /* Remove default list style */
+  position: relative; /* Required for the custom arrow positioning */
+  padding-right: 20px; /* Ensure space for the custom arrow */
+}
+
+.persona summary::-webkit-details-marker {
+  display: none; /* Remove the marker for WebKit browsers (Chrome, Safari) */
+}
+
+.persona summary::marker {
+  display: none; /* Remove the marker for other browsers */
+}
+
+/* Add custom arrow */
+.persona summary::after {
+  content: "\25BC"; /* Unicode character for down arrow */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+  color: #38414b;
+}
+
+/* Rotate the arrow when the details element is open */
+.persona[open] summary::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.persona-details {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+.persona-details h4 {
+  margin: 10px 0 5px;
+}
+
+.persona-details ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.persona-details li {
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.persona-details p {
+  margin: 10px 0 5px;
+  padding-right: 10px;
+}
+
+/* TEAM MEMBERS  */
+
+.tm-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 3;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.team-member {
+  display: flex;
+  margin-left: 0;
+  font-size: 18px;
+}
+
+.team-link {
+  color: #0984e3; /* Normal link color */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Ensure the link can be transformed */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+}
+
+.team-link:hover {
+  color: #0056b3; /* Hover link color */
+  transform: scale(1.03); /* Scale the link slightly on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Footer */
+
+.footer {
+  padding-left: 20px;
+  margin-top: auto;
+}

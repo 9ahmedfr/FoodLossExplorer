@@ -1,0 +1,294 @@
+/* External CSS style file */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 0px;
+  margin: 0px;
+  background: #ddd;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Style the top navigation bar */
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #38414b;
+  padding: 15px 20px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  overflow-x: auto;
+  text-wrap: nowrap;
+}
+
+.topnav .logo a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  padding: 0px;
+}
+
+/* Style the topnav links */
+
+.topnav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.topnav ul li {
+  margin-left: 20px;
+}
+
+.topnav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  transition: color 0.3s ease;
+  padding: 10px;
+}
+
+.topnav ul li a:hover {
+  color: #b7bbc1;;
+}
+
+/* Header (div) formatting */
+
+.header {
+   color: white;
+   text-align: center;
+   padding: 55px 20px 55px;
+   background-color: #1e2530;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .header h1 {
+   font-size: 50px;
+   margin: 0;
+   padding: 10px;
+   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+ }
+ 
+ .header p {
+   font-size: 24px;
+   margin: 10px 0 20px;
+   padding: 15px;
+ }
+ 
+ .header button {
+   padding: 16px 25px;
+   font-size: 19px;
+   background-color: white;
+   font-weight: bold;
+   border: none;
+   border-radius: 20px;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+ }
+
+ .header a button {
+   text-decoration: none;
+   color: black;
+ }
+ 
+ .header button:hover {
+   transform: scale(1.075);
+   background-color: white;
+ }
+
+/* Style the content */
+
+.content {
+  padding: 0;
+  margin: 0;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0px 15px;
+}
+
+.data-snapshot {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0f0f0;
+  padding: 40px 10px 35px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.snapshot-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.data-snapshot i {
+  font-size: 36px;
+  display: block;
+  color: #2d3436;
+}
+
+.data-snapshot p {
+  font-size: 17px;
+  color: #2d3436;
+  margin: 0;
+  padding: 4px 0px;
+  text-align: center;
+}
+
+.snapshot-heading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2d3436;
+  margin: 0;
+  padding: 16px 0px 6px;
+}
+
+.range-slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320x;
+  padding: 0px 0px;
+}
+
+.range-slider-container button:hover {
+  cursor: pointer;
+}
+
+.range-slider-container i {
+  font-size: 25px; 
+  margin:0 0 4px 3px; 
+  padding:0px; 
+  color:#0984e3;
+  transition: transform 0.3s ease, 0.3s color ease;
+}
+
+.range-slider-container i:hover {
+  color: #74b9ff;
+  transition: transform 0.3s ease, 0.3s color ease;
+}
+
+.YearButton {
+  display: block;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+}
+
+.range-slider {
+  flex-grow: 1;
+  position: relative;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 170px;
+  max-width: 170px;
+}
+
+.slider-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #2d3436;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#startHandle {
+  left: 0;
+}
+
+#endHandle {
+  right: 0;
+}
+
+.selected-years {
+  margin: 0px 7px;
+  width: 40px;
+  min-width: 40px;
+  max-width: 40px;
+}
+
+.SliderLabel {
+  font-size: 17px;
+  color: #2d3436;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  width: 42px;
+}
+
+input[readonly] {
+  background-color: transparent;
+}
+
+/* Topics Covered Styling */
+
+.introduction {
+  text-align: center;
+  padding: 15px 20px 45px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.introduction h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #2d3436;
+}
+
+.introduction p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #636e72;
+}
+
+.quick-links button {
+  padding: 15px;
+  font-size: 16px;
+  width: 165px;
+  text-align: center;
+  margin: 10px 10px 0 10px;
+  background-color: #0984e3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.quick-links button:hover {
+  background-color: #74b9ff;
+  transform: scale(1.05);
+}
+
+/* Style the footer */
+.footer {
+  padding-left: 20px;
+  margin-top: auto;
+}
